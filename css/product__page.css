@@ -1,0 +1,102 @@
+:root {
+  --yellow: #ffbc2f;
+  --red: #d82727;
+  --black: #1b1b1b;
+  --titleFont: "Yanone Kaffeesatz", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background: #fcf5e6;
+}
+.body {
+  font: 16px / 1.42em "Roboto", Arial, sans-serif;
+  color: #212121;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  overflow: hidden;
+  min-width: 1440px;
+  background: url(/img/bg/hero.jpg);
+}
+.header {
+  width: 1290px;
+  height: 185px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__content {
+  height: 185px;
+  overflow: hidden;
+}
+
+.header__content-photo {
+  width: 520px;
+  position: relative;
+}
+
+.header__content-photo img {
+  width: 100%;
+  position: absolute;
+  top: -30px;
+}
+.header__content-text {
+  position: absolute;
+  top: 10px;
+}
+.lined-text {
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.lined-text--no-indent {
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.lined-text__word {
+  background: #000;
+  padding: 0 17px 8px;
+  margin-top: -7px;
+}
+.lined-text__word--color-yellow {
+  color: var(--yellow);
+}
+
+.color--yellow {
+  color: var(--yellow);
+}
+
+.lined-text__word:nth-child(2n) {
+  margin-left: 8px;
+}
+
+.mail {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+
+.mail__title {
+  margin-bottom: 3px;
+}
+.mail__content {
+  background: #212121;
+  color: var(--yellow);
+  padding: 5px 10px;
+}
