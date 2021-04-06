@@ -305,7 +305,9 @@ li {
 }
 /* end filter */
 /* start nav__menu */
-.nav__menu-content {
+.nav__menu {
+  width: 1100px;
+  margin: 0 auto;
   margin-bottom: 70px;
 }
 .nav__content-window {
