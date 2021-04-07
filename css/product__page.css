@@ -33,7 +33,7 @@ li {
   min-width: 1440px;
 }
 .hero {
-  background: url(/img/bg/hero.jpg);
+  background: url(img/bg/hero.jpg);
 }
 .header {
   width: 1290px;
