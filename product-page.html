@@ -53,10 +53,38 @@
       </section>
       <section class="product">
         <div class="product__card">
-          <div class="product__item">
+          <div class="product__item black">
+            <img
+              class="products__img"
+              src="img/tshirts/tshirt_07.png"
+              alt="tshirt"
+            />
+          </div>
+          <div class="product__item white">
             <img
               class="products__img"
               src="img/tshirts/tshirt_08.png"
+              alt="tshirt"
+            />
+          </div>
+          <div class="product__item green">
+            <img
+              class="products__img"
+              src="img/tshirts/tshirt_09.png"
+              alt="tshirt"
+            />
+          </div>
+          <div class="product__item blue">
+            <img
+              class="products__img"
+              src="img/tshirts/tshirt_10.png"
+              alt="tshirt"
+            />
+          </div>
+          <div class="product__item red">
+            <img
+              class="products__img"
+              src="img/tshirts/tshirt_11.png"
               alt="tshirt"
             />
           </div>
@@ -69,7 +97,15 @@
             <ul class="product__info-structure">
               <li class="product__structure-item">Состав: Хлопок 100%</li>
               <li class="product__structure-item">Сезон: Мульти</li>
-              <li class="product__structure-item">Цвет: Черный</li>
+              <ul class="color__item">
+                <li class="product__structure-item color__item-text black">Цвет: Черный</li>
+                <li class="product__structure-item color__item-text white ">Цвет: Белый</li>
+                <li class="product__structure-item color__item-text green ">Цвет: Зеленый</li>
+                <li class="product__structure-item
+                color__item-text blue ">Цвет: Синий</li>
+                <li class="product__structure-item
+                color__item-text red ">Цвет: Красный</li>
+              </ul>
               <li class="product__structure-item">Узор: Рисунки и надписи</li>
               <li class="product__structure-item">
                 Страна производства: Россия
@@ -82,37 +118,41 @@
                   <div class="product__item-text">XXS</div>
                 </li>
                 <li class="product__size-item">
-                  <div class="product__item-text">XS</div>
+                  <div class="product__item-text" data-filter="sizeXS">XS</div>
                 </li>
                 <li class="product__size-item">
-                  <div class="product__item-text">S</div>
+                  <div class="product__item-text" data-filter="sizeS">S</div>
                 </li>
                 <li class="product__size-item">
-                  <div class="product__item-text">M</div>
+                  <div class="product__item-text" data-filter="sizeM">M</div>
                 </li>
                 <li class="product__size-item product__size-item--active">
-                  <div class="product__item-text">L</div>
+                  <div class="product__item-text
+                  "data-filter="sizeL">L</div>
                 </li>
                 <li class="product__size-item">
-                  <div class="product__item-text">XL</div>
+                  <div class="product__item-text" data-filter="sizeXL">XL</div>
                 </li>
                 <li class="product__size-item">
-                  <div class="product__item-text">2XL</div>
+                  <div class="product__item-text"data-filter="size2XL">2XL</div>
                 </li>
                 <li class="product__size-item">
-                  <div class="product__item-text">3XL</div>
+                  <div class="product__item-text" data-filter="sizeXL">3XL</div>
                 </li>
               </ul>
             </div>
             <div class="product__colors">
               <ul class="product__color">
                 <li
-                  class="product__color-item product__item--black product__color-item--active"
+                  class="product__color-item product__item--black product__color-item--active"   data-filter="black"
                 ></li>
-                <li class="product__color-item product__item--white"></li>
-                <li class="product__color-item product__item--green"></li>
-                <li class="product__color-item product__item--blue"></li>
-                <li class="product__color-item product__item--red"></li>
+                <li class="product__color-item product__item--white"   data-filter="white"></li>
+                <li class="product__color-item product__item--green"
+                data-filter="green"></li>
+                <li class="product__color-item product__item--blue"
+                data-filter="blue"></li>
+                <li class="product__color-item product__item--red"
+                data-filter="red"></li>
               </ul>
             </div>
             <div class="product__info-btn">
@@ -361,6 +401,9 @@
       </footer>
     </div>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="scripts/filter-size.js"></script>
+    <script src="scripts/filter-color.js"></script>
+    <script src="scripts/filter-tshirt.js"></script>
     <script src="scripts/filter-desc.js"></script>
   </body>
 </html>
